@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Simple Login Page by Saad Shaikh </title>
+
+   <!-- GSAP Link -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+         integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+   <style>
+      @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+      * {
+         margin: 0;
+         padding: 0;
+      }
+
+      body {
+         height: 100vh;
+         width: 100vw;
+         overflow: hidden;
+         background-color: #FFFCFC;
+         font-family: "Rubik", sans-serif;
+         color: #424242;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+
+      @media only screen and (min-width: 481px) {
+         div.container {
+            display: none;
+         }
+
+         .H1text {
+            text-align: center;
+         }
+      }
+
+      @media only screen and (max-width: 480px) {
+         .H1text {
+            display: none;
+         }
+
+         div.container {
+            height: 100vh;
+            width: 100vw;
+            background-color: #F9F9F9;
+         }
+
+         div.container .image {
+            height: 70vh;
+            width: 100vw;
+         }
+
+         div.container .image img {
+            height: fit-content;
+            width: 100vw;
+         }
+
+         div.text {
+            margin-top: -6vh;
+            margin-left: 4vw;
+            display: inline-block;
+            text-align: left;
+         }
+
+         div.text h1 {
+            color: #424242;
+            font-family: Rubik;
+            font-size: xx-large;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 110%;
+         }
+
+         div.text p {
+            margin-top: 2.16vh;
+            color: #BDBDBD;
+            width: 70vw;
+            font-family: Rubik;
+            font-size: small;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 140%;
+            letter-spacing: 0.2px;
+         }
+
+         a.button {
+            display: inline-flex;
+            align-items: center;
+            gap: 24px;
+            text-decoration: none;
+            position: absolute;
+            right: 6vw;
+            bottom: 8vh;
+         }
+
+         a.button p {
+            color: #9E9E9E;
+            font-family: Rubik;
+            font-size: medium;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 140%;
+            letter-spacing: 0.2px;
+         }
+      }
+   </style>
+</head>
+
+<body>
+   <h1 class="H1text">Please User Smaller Screen or Use Inspect Mode</h1>
+   <div class="container">
+      <div class="image">
+         <img src="background.svg" alt="">
+      </div>
+      <div class="text">
+         <h1>
+            Welcome
+         </h1>
+         <p>
+            Lorem ipsum dolor sit amet consectetur. Lorem id sit
+         </p>
+      </div>
+      <a class="button">
+         <p>Continue</p>
+         <img src="arrow.svg" alt="">
+      </a>
+   </div>
+
+
+   <!-- Animation -->
+
+   <script>
+      gsap.from(".image", {
+         duration: 2,
+         ease: "slow(0.7,0.7,false)",
+         y: -1000
+      });
+      gsap.from(".text", {
+         x: -1000,
+         ease: "slow(0.7,0.7,false)",
+         duration: 2,
+      })
+      gsap.from(".button", {
+         y: 1000,
+         ease: "slow(0.7,0.7,false)",
+         duration: 2,
+      })
+   </script>
+
+</body>
+
+</html>

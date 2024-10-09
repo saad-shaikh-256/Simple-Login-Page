@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap');
+
+:root {
+   --primary-color: #FF8383;
+   --white-color: #ffffff;
+   --black-color: #212121;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   scroll-behavior: smooth;
+   box-sizing: border-box;
+   transition: .5s;
+   overflow-wrap: break-word;
+}
+
+html,
+body {
+   background-color: #FFFCFC;
+   overflow-x: hidden;
+   overflow-y: hidden;
+   width: 100dvw;
+   height: 100dvh;
+   scroll-behavior: smooth;
+   font-family: "Rubik", sans-serif;
+   color: var(--black-color);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.container {
+   height: 100dvh;
+   width: 100dvw;
+   background-color: #F9F9F9;
+   display: none;
+}
+
+.H1text {
+   text-align: center;
+}
+
+@media (max-width: 480px) {
+   .H1text {
+      display: none;
+   }
+
+   .container {
+      height: 100dvh;
+      width: 100dvw;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+   }
+
+   .container .statusBar {
+      width: 100dvw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      z-index: 2;
+   }
+
+   .container .homeBar {
+      width: 100dvw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      bottom: 0;
+      z-index: 2;
+   }
+
+   .container>img {
+      width: 100dvw;
+      min-width: 100%;
+      max-height: 70dvh;
+      background-position: center center;
+      object-fit: cover;
+      height: fit-content;
+      position: relative;
+   }
+
+   .container>.text {
+      width: 90dvw;
+      margin: auto;
+      position: relative;
+      margin-top: -8dvh;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 2dvh;
+   }
+
+   .container>.text span:nth-child(1) {
+      width: 100%;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      font-size: 40px;
+      font-weight: 600;
+   }
+
+   .container>.text span:nth-child(2) {
+      width: 75dvw;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      font-size: 14px;
+      font-weight: 500;
+      opacity: .5;
+      letter-spacing: 0.2px;
+      line-height: 140%;
+   }
+
+   .container .button {
+      display: inline-flex;
+      align-items: center;
+      gap: 3dvw;
+      text-decoration: none;
+      position: absolute;
+      right: 6dvw;
+      bottom: 6dvh;
+   }
+
+   .container .button p {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 140%;
+      letter-spacing: 0.2px;
+      color: var(--black-color);
+      opacity: .5;
+   }
+}

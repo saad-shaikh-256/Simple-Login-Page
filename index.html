@@ -4,119 +4,40 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Simple Login Page</title>
+   <title>Simple Login Page - by shaikhsaad256@gmail.com</title>
+   <link rel="stylesheet" href="index.css">
+
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
       integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
       crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-   <style>
-      @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap');
 
-      * {
-         margin: 0;
-         padding: 0;
-         box-sizing: border-box;
-      }
-
-      body {
-         height: 100vh;
-         width: 100vw;
-         overflow: hidden;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         background-color: #FFFCFC;
-         font-family: "Rubik", sans-serif;
-         color: #424242;
-      }
-
-      .H1text {
-         text-align: center;
-      }
-
-      .container {
-         height: 100vh;
-         width: 100vw;
-         background-color: #F9F9F9;
-         display: none;
-      }
-
-      .image {
-         height: 70vh;
-         width: 100vw;
-      }
-
-      .image img {
-         width: 100vw;
-      }
-
-      .text {
-         margin: -6vh 0 0 4vw;
-         text-align: left;
-      }
-
-      .text h1 {
-         font-size: xx-large;
-         font-weight: 600;
-         line-height: 110%;
-      }
-
-      .text p {
-         margin-top: 2.16vh;
-         color: #BDBDBD;
-         width: 70vw;
-         font-size: small;
-         font-weight: 500;
-         line-height: 140%;
-         letter-spacing: 0.2px;
-      }
-
-      .button {
-         display: inline-flex;
-         align-items: center;
-         gap: 3vw;
-         text-decoration: none;
-         position: absolute;
-         right: 6vw;
-         bottom: 8vh;
-      }
-
-      .button p {
-         color: #9E9E9E;
-         font-size: medium;
-         font-weight: 500;
-         line-height: 140%;
-         letter-spacing: 0.2px;
-      }
-
-      @media only screen and (max-width: 480px) {
-         .H1text {
-            display: none;
-         }
-
-         .container {
-            display: block;
-         }
-      }
-   </style>
 </head>
 
 <body>
    <h1 class="H1text">Please Use Smaller Screen or Inspect Mode</h1>
    <div class="container">
-      <div class="image">
-         <img src="Icon/background.svg" alt="Background Image">
+
+      <div class="statusBar">
+         <img src="Assets/Status & Homebar/Left Side.svg" alt="">
+         <img src="Assets/Status & Homebar/Right Side.svg" alt="">
       </div>
+      <div class="homeBar">
+         <img src="Assets/Status & Homebar/HomeIndicator.svg" alt="">
+      </div>
+
+      <img src="Assets/bg.svg" alt="Background Image" id="img">
+
       <div class="text">
-         <h1>Welcome</h1>
-         <p>Lorem ipsum dolor sit amet consectetur. Lorem id sit</p>
+         <span>Welcome</span>
+         <span>Lorem ipsum dolor sit amet consectetur. Lorem id sit</span>
       </div>
-      <a href="Login-Page.html" class="button">
+      <a href="Login-page.html" class="button">
          <p>Continue</p>
-         <img src="Icon/arrow.svg" alt="Arrow">
+         <img src="Assets/Icons/arrow.svg" alt="Arrow">
       </a>
    </div>
    <script>
-      gsap.from(".image", { duration: 2, ease: "slow(0.7,0.7,false)", y: -1000 });
+      gsap.from("#img", { y: -1000, ease: "slow(0.7,0.7,false)", duration: 2 });
       gsap.from(".text", { x: -1000, ease: "slow(0.7,0.7,false)", duration: 2 });
       gsap.from(".button", { y: 1000, ease: "slow(0.7,0.7,false)", duration: 2 });
    </script>

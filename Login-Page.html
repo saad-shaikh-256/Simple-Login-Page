@@ -4,275 +4,66 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Simple Login Page</title>
-   <!-- GSAP Link -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-   <style>
-      @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-
-      * {
-         margin: 0;
-         padding: 0;
-         box-sizing: border-box;
-      }
-
-      body {
-         height: 100vh;
-         width: 100vw;
-         overflow: hidden;
-         background-color: #FFFCFC;
-         font-family: "Rubik", sans-serif;
-         color: #424242;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-      }
-
-      @media only screen and (min-width: 481px) {
-         .container {
-            display: none;
-         }
-
-         .H1text {
-            text-align: center;
-         }
-      }
-
-      @media only screen and (max-width: 480px) {
-         .H1text {
-            display: none;
-         }
-
-         .container {
-            height: 100vh;
-            width: 100vw;
-            background-color: #F9F9F9;
-         }
-
-         .container .image {
-            margin-top: -25vh;
-            height: 70vh;
-            width: 100vw;
-            z-index: 0;
-         }
-
-         .container .image img {
-            height: auto;
-            width: 100vw;
-         }
-
-         .text {
-            position: absolute;
-            margin-top: -8vh;
-            margin-left: 4vw;
-            z-index: 1;
-         }
-
-         .text h1 {
-            color: #424242;
-            font-size: xx-large;
-            font-weight: 600;
-            line-height: 110%;
-         }
-
-         .text hr {
-            margin-top: 0.5vh;
-            width: 74px;
-            height: 3px;
-            background-color: #FF8383;
-            border: none;
-            border-radius: 10px;
-         }
-
-         .form {
-            margin-left: 4vw;
-            display: block;
-         }
-
-         .form label {
-            color: #616161;
-            font-size: large;
-            font-weight: 500;
-            line-height: 140%;
-            letter-spacing: 0.2px;
-         }
-
-         .form .inputfield {
-            display: flex;
-            align-items: center;
-            width: 90vw;
-            border-bottom: 1.5px solid #BDBDBD;
-            padding-bottom: 1vh;
-            margin-top: 0.8vh;
-            margin-bottom: 2vh;
-            gap: 1vw;
-            transition: border-bottom 0.3s;
-         }
-
-         .form .inputfield:hover {
-            border-bottom: 2px solid #FF8383;
-         }
-
-         .form hr {
-            width: 8px;
-            transform: rotate(-90deg);
-            stroke-width: 1px;
-            stroke: #616161;
-         }
-
-         .form input {
-            background: none;
-            border: none;
-            color: #616161;
-            font-family: Rubik;
-            font-size: medium;
-            flex: 1;
-            line-height: 140%;
-            letter-spacing: 0.2px;
-            outline: none;
-            transition: 0.3s;
-         }
-
-         .form button {
-            border: none;
-            width: 90vw;
-            padding: 1.5vh 1vw;
-            background: #FF8383;
-            color: #F8F8FF;
-            font-size: large;
-            font-weight: 600;
-            border-radius: 12px;
-            margin-top: 14vh;
-            cursor: pointer;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-         }
-
-         .form .rem_for {
-            width: 90vw;
-            display: flex;
-            justify-content: space-between;
-            margin-top: 1vh;
-         }
-
-         .form .rem_for div {
-            display: flex;
-            gap: 2vw;
-            align-items: center;
-            justify-content: center;
-         }
-
-         .form .rem_for input[type="checkbox"] {
-            display: grid;
-            place-content: center;
-            appearance: none;
-            width: 1em;
-            border: 1px solid #949494;
-            height: 1em;
-            border-radius: 1px;
-            transition: 120ms transform ease-in-out;
-            cursor: pointer;
-         }
-
-         .form .rem_for input[type="checkbox"]::before {
-            content: "";
-            width: 0.65em;
-            height: 0.65em;
-            transform: scale(0);
-            background-color: white;
-            transition: 120ms transform ease-in-out;
-            box-shadow: inset 1em 1em var(--form-control-color);
-         }
-
-         .form .rem_for input[type="checkbox"]:checked::before {
-            transform: scale(1);
-            background-color: #FF8383;
-            border-radius: 1px;
-            border: 1px solid #FF8383;
-
-         }
-
-         .form .rem_for label {
-            color: #424242;
-            font-size: small;
-            font-weight: 500;
-         }
-
-         .form .forgot {
-            color: #FF8383;
-            font-size: 12px;
-            font-weight: 600;
-         }
-
-         .form .signup {
-            margin-top: 3vh;
-            text-align: center;
-         }
-
-         .form .signup p {
-            color: #9E9E9E;
-            font-size: small;
-            font-weight: 400;
-         }
-
-         .form .signup a {
-            color: #FF8383;
-            font-weight: 500;
-            text-decoration: none;
-         }
-      }
-   </style>
+   <title>Simple Login Page - by shaikhsaad256@gmail.com</title>
+   <link rel="stylesheet" href="Login-page.css">
 </head>
 
 <body>
-   <h1 class="H1text">Please use a smaller screen or use Inspect Mode</h1>
+   <h1 class="H1text">Please Use Smaller Screen or Inspect Mode</h1>
    <div class="container">
-      <div class="image">
-         <img src="Icon/background.svg" alt="">
+
+      <div class="statusBar">
+         <img src="Assets/Status & Homebar/Left Side.svg" alt="">
+         <img src="Assets/Status & Homebar/Right Side.svg" alt="">
       </div>
+      <div class="homeBar">
+         <img src="Assets/Status & Homebar/HomeIndicator.svg" alt="">
+      </div>
+
+      <img src="Assets/bg.svg" alt="Background Image" id="img">
+
       <div class="text">
-         <h1>Sign in</h1>
+         <span>Sign in</span>
          <hr>
       </div>
+
       <div class="form">
-         <div class="email">
+         <div class="inputs">
             <label for="email">Email</label>
-            <div class="inputfield">
-               <img src="Icon/mailicon.svg" alt="Mail Icon">
+            <div class="fields">
+               <img src="Assets/Icons/Mail-Icon.svg" alt="Mail Icon">
                <hr>
                <input type="email" id="email" placeholder="enter your email">
             </div>
          </div>
-         <div class="password">
+
+         <div class="inputs">
             <label for="password">Password</label>
-            <div class="inputfield">
-               <img src="Icon/lock.svg" alt="Lock Icon">
+            <div class="fields">
+               <img src="Assets/Icons/Lock-Icon.svg" alt="Lock Icon">
                <hr>
                <input type="password" id="password" placeholder="enter your password">
-               <img src="Icon/view.svg" alt="View Password" style="margin-left: 20%;">
+               <div class="passIcon">
+                  <img src="Assets/Icons/View-Icon.svg" alt="View Icon">
+               </div>
             </div>
          </div>
-         <div class="rem_for">
-            <div>
+
+         <div class="forgot-remember">
+            <div class="remember">
                <input type="checkbox" id="checkbox">
                <label for="checkbox">Remember Me</label>
             </div>
-            <label class="forgot" style="font-weight: 700; color: #FF8383;">Forgot Password?</label>
-         </div>
-         <button type="submit">Login</button>
-         <div class="signup">
-            <p>Don't have an account? <a href="Signup-Page.html">Sign up</a></p>
+            <div class="forgot">Forgot password?</div>
          </div>
       </div>
-   </div>
-   <script>
-      gsap.from(".image", { duration: 2, ease: "slow(0.7,0.7,false)", y: 50 });
-      gsap.from(".text", { y: 50, ease: "slow(0.7,0.7,false)", duration: 2 });
-      gsap.from(".form", { y: 500, ease: "slow(0.7,0.7,false)", duration: 2 });
-   </script>
+
+      <div class="Buttons">
+         <button type="submit">Login</button>
+         <span class="SignUp">
+            <span>Don't have an account? <a href="SignUp-Page.html">Sign Up</a></span>
+         </span>
+      </div>
 </body>
 
 </html>

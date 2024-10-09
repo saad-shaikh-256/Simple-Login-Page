@@ -4,229 +4,80 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Simple Signup Page</title>
-   <!-- GSAP Link -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-   <style>
-      @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-
-      * {
-         margin: 0;
-         padding: 0;
-         box-sizing: border-box;
-      }
-
-      body {
-         height: 100vh;
-         width: 100vw;
-         overflow: hidden;
-         background-color: #FFFCFC;
-         font-family: "Rubik", sans-serif;
-         color: #424242;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-      }
-
-      @media only screen and (min-width: 481px) {
-         .container {
-            display: none;
-         }
-
-         .H1text {
-            text-align: center;
-         }
-      }
-
-      @media only screen and (max-width: 480px) {
-         .H1text {
-            display: none;
-         }
-
-         .container {
-            height: 100vh;
-            width: 100vw;
-            background-color: #F9F9F9;
-         }
-
-         .container .image {
-            margin-top: -40vh;
-            height: 70vh;
-            width: 100vw;
-            z-index: 0;
-         }
-
-         .container .image img {
-            height: auto;
-            width: 100vw;
-         }
-
-         .text {
-            position: absolute;
-            margin-top: -8vh;
-            margin-left: 4vw;
-            z-index: 1;
-         }
-
-         .text h1 {
-            color: #424242;
-            font-size: xx-large;
-            font-weight: 600;
-            line-height: 110%;
-         }
-
-         .text hr {
-            margin-top: 0.5vh;
-            width: 74px;
-            height: 3px;
-            background-color: #FF8383;
-            border: none;
-            border-radius: 10px;
-         }
-
-         .form {
-            margin-left: 4vw;
-            display: block;
-         }
-
-         .form label {
-            color: #616161;
-            font-size: large;
-            font-weight: 500;
-            line-height: 140%;
-            letter-spacing: 0.2px;
-         }
-
-         .form .inputfield {
-            display: flex;
-            align-items: center;
-            width: 90vw;
-            border-bottom: 1.5px solid #BDBDBD;
-            padding-bottom: 1vh;
-            margin-top: 0.8vh;
-            margin-bottom: 2vh;
-            gap: 1vw;
-            transition: border-bottom 0.3s;
-         }
-
-         .form .inputfield:hover {
-            border-bottom: 2px solid #FF8383;
-         }
-
-         .form hr {
-            width: 8px;
-            transform: rotate(-90deg);
-            stroke-width: 1px;
-            stroke: #616161;
-         }
-
-         .form input {
-            background: none;
-            border: none;
-            color: #616161;
-            font-family: Rubik;
-            font-size: medium;
-            flex: 1;
-            line-height: 140%;
-            letter-spacing: 0.2px;
-            outline: none;
-            transition: 0.3s;
-         }
-
-         .form button {
-            border: none;
-            width: 90vw;
-            padding: 1.5vh 1vw;
-            background: #FF8383;
-            color: #F8F8FF;
-            font-size: large;
-            font-weight: 600;
-            border-radius: 12px;
-            margin-top: 14vh;
-            cursor: pointer;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-         }
-
-         .form .signup {
-            margin-top: 3vh;
-            text-align: center;
-         }
-
-         .form .signup p {
-            color: #9E9E9E;
-            font-size: small;
-            font-weight: 400;
-         }
-
-         .form .signup a {
-            color: #FF8383;
-            font-weight: 500;
-            text-decoration: none;
-         }
-      }
-   </style>
+   <title>Simple Login Page - by shaikhsaad256@gmail.com</title>
+   <link rel="stylesheet" href="Signup-page.css">
 </head>
 
 <body>
-   <h1 class="H1text">Please use a smaller screen or use Inspect Mode</h1>
+   <h1 class="H1text">Please Use Smaller Screen or Inspect Mode</h1>
    <div class="container">
-      <div class="image">
-         <img src="Icon/background.svg" alt="">
+
+      <div class="statusBar">
+         <img src="Assets/Status & Homebar/Left Side.svg" alt="">
+         <img src="Assets/Status & Homebar/Right Side.svg" alt="">
       </div>
+      <div class="homeBar">
+         <img src="Assets/Status & Homebar/HomeIndicator.svg" alt="">
+      </div>
+
+      <img src="Assets/bg.svg" alt="Background Image" id="img">
+
       <div class="text">
-         <h1>Sign up</h1>
+         <span>Sign in</span>
          <hr>
       </div>
+
       <div class="form">
-         <div class="email">
+         <div class="inputs">
             <label for="email">Email</label>
-            <div class="inputfield">
-               <img src="Icon/mailicon.svg" alt="Mail Icon">
+            <div class="fields">
+               <img src="Assets/Icons/Mail-Icon.svg" alt="Mail Icon">
                <hr>
-               <input type="email" id="email" placeholder="Enter your email">
+               <input type="email" id="email" placeholder="enter your email">
             </div>
          </div>
-         <div class="phone">
-            <label for="phone">Phone No</label>
-            <div class="inputfield">
-               <img src="Icon/phone icon.svg" alt="Phone Icon">
+
+         <div class="inputs">
+            <label for="Phone">Phone no</label>
+            <div class="fields">
+               <img src="Assets/Icons/Phone-Icon.svg" alt="Phone Icon">
                <hr>
-               <input type="tel" id="phone" placeholder="Enter your phone no">
+               <input type="tel" id="Phone" placeholder="enter your number">
             </div>
          </div>
-         <div class="password">
+
+         <div class="inputs">
             <label for="password">Password</label>
-            <div class="inputfield">
-               <img src="Icon/lock.svg" alt="Lock Icon">
+            <div class="fields">
+               <img src="Assets/Icons/Lock-Icon.svg" alt="Lock Icon">
                <hr>
-               <input type="password" id="password" placeholder="Enter your password">
-               <img src="Icon/view.svg" alt="View Password" style="margin-left: 20%;">
+               <input type="password" id="password" placeholder="enter your password">
+               <div class="passIcon">
+                  <img src="Assets/Icons/View-Icon.svg" alt="View Icon">
+               </div>
             </div>
          </div>
-         <div class="confirm-password">
-            <label for="confirm-password">Confirm Password</label>
-            <div class="inputfield">
-               <img src="Icon/lock.svg" alt="Lock Icon">
+
+         <div class="inputs">
+            <label for="password">Confirm Password</label>
+            <div class="fields">
+               <img src="Assets/Icons/Lock-Icon.svg" alt="Lock Icon">
                <hr>
-               <input type="password" id="confirm-password" placeholder="Confirm your password">
-               <img src="Icon/view.svg" alt="View Password" style="margin-left: 20%;">
+               <input type="password" id="password" placeholder="confirm your password">
+               <div class="passIcon">
+                  <img src="Assets/Icons/View-Icon.svg" alt="View Icon">
+               </div>
             </div>
          </div>
-         <button type="submit">Create Account</button>
-         <div class="signup">
-            <p>Already have an account? <a href="Login-Page.html">Sign In</a></p>
-         </div>
+
       </div>
-   </div>
-   <script>
-      gsap.from(".image", { duration: 2, ease: "slow(0.7,0.7,false)", y: 50 });
-      gsap.from(".text", { y: 50, ease: "slow(0.7,0.7,false)", duration: 2 });
-      gsap.from(".form", { y: 500, ease: "slow(0.7,0.7,false)", duration: 2 });
-   </script>
+
+      <div class="Buttons">
+         <button type="submit">Create Account</button>
+         <span class="SignIn">
+            <span>Already have an account? <a href="Login-page.html">Sign In</a></span>
+         </span>
+      </div>
 </body>
 
 </html>

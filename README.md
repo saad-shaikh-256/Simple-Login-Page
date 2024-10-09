@@ -1,6 +1,6 @@
 # Simple Login Page - HTML & CSS
 
-![Login Form]([path_to_image_here](https://github.com/saad-shaikh-256/Simple-Login-Page/blob/main/Assets/Cover/Full%20Cover.jpg))
+![Login Form](https://github.com/saad-shaikh-256/Simple-Login-Page/blob/main/Assets/Cover/Full%20Cover.jpg)
 
 ## Overview
 

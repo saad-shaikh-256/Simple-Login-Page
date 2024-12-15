@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+
+   --primary-color: #FF8383;
+   --white-color: #ffffff;
+   --black-color: #212121;
+   --background-color: #FFFCFC;
+
+   /* Font Sizes */
+   --1px: 0.0625rem;
+   --2px: 0.125rem;
+   --3px: 0.1875rem;
+   --4px: 0.25rem;
+   --5px: 0.3125rem;
+   --6px: 0.375rem;
+   --7px: 0.4375rem;
+   --8px: 0.5rem;
+   --9px: 0.5625rem;
+   --10px: 0.625rem;
+   --11px: 0.6875rem;
+   --12px: 0.75rem;
+   --13px: 0.8125rem;
+   --14px: 0.875rem;
+   --15px: 0.9375rem;
+   --16px: 1rem;
+   --17px: 1.0625rem;
+   --18px: 1.125rem;
+   --19px: 1.1875rem;
+   --20px: 1.25rem;
+   --21px: 1.3125rem;
+   --22px: 1.375rem;
+   --23px: 1.4375rem;
+   --24px: 1.5rem;
+   --25px: 1.5625rem;
+   --26px: 1.625rem;
+   --27px: 1.6875rem;
+   --28px: 1.75rem;
+   --29px: 1.8125rem;
+   --30px: 1.875rem;
+   --31px: 1.9375rem;
+   --32px: 2rem;
+   --33px: 2.0625rem;
+   --34px: 2.125rem;
+   --35px: 2.1875rem;
+   --36px: 2.25rem;
+   --37px: 2.3125rem;
+   --38px: 2.375rem;
+   --39px: 2.4375rem;
+   --40px: 2.5rem;
+   --41px: 2.5625rem;
+   --42px: 2.625rem;
+   --43px: 2.6875rem;
+   --44px: 2.75rem;
+   --45px: 2.8125rem;
+   --46px: 2.875rem;
+   --47px: 2.9375rem;
+   --48px: 3rem;
+   --49px: 3.0625rem;
+   --50px: 3.125rem;
+   --51px: 3.1875rem;
+   --52px: 3.25rem;
+   --53px: 3.3125rem;
+   --54px: 3.375rem;
+   --55px: 3.4375rem;
+   --56px: 3.5rem;
+   --57px: 3.5625rem;
+   --58px: 3.625rem;
+   --59px: 3.6875rem;
+   --60px: 3.75rem;
+   --61px: 3.8125rem;
+   --62px: 3.875rem;
+   --63px: 3.9375rem;
+   --64px: 4rem;
+   --65px: 4.0625rem;
+   --66px: 4.125rem;
+   --67px: 4.1875rem;
+   --68px: 4.25rem;
+   --69px: 4.3125rem;
+   --70px: 4.375rem;
+   --71px: 4.4375rem;
+   --72px: 4.5rem;
+   --73px: 4.5625rem;
+   --74px: 4.625rem;
+   --75px: 4.6875rem;
+   --76px: 4.75rem;
+   --77px: 4.8125rem;
+   --78px: 4.875rem;
+   --79px: 4.9375rem;
+   --80px: 5rem;
+   --81px: 5.0625rem;
+   --82px: 5.125rem;
+   --83px: 5.1875rem;
+   --84px: 5.25rem;
+   --85px: 5.3125rem;
+   --86px: 5.375rem;
+   --87px: 5.4375rem;
+   --88px: 5.5rem;
+   --89px: 5.5625rem;
+   --90px: 5.625rem;
+   --91px: 5.6875rem;
+   --92px: 5.75rem;
+   --93px: 5.8125rem;
+   --94px: 5.875rem;
+   --95px: 5.9375rem;
+   --96px: 6rem;
+   --97px: 6.0625rem;
+   --98px: 6.125rem;
+   --99px: 6.1875rem;
+   --100px: 6.25rem;
+   --101px: 6.3125rem;
+   --102px: 6.375rem;
+   --103px: 6.4375rem;
+   --104px: 6.5rem;
+   --105px: 6.5625rem;
+   --106px: 6.625rem;
+   --107px: 6.6875rem;
+   --108px: 6.75rem;
+   --109px: 6.8125rem;
+   --110px: 6.875rem;
+   --111px: 6.9375rem;
+   --112px: 7rem;
+   --113px: 7.0625rem;
+   --114px: 7.125rem;
+   --115px: 7.1875rem;
+   --116px: 7.25rem;
+   --117px: 7.3125rem;
+   --118px: 7.375rem;
+   --119px: 7.4375rem;
+   --120px: 7.5rem;
+   --121px: 7.5625rem;
+   --122px: 7.625rem;
+   --123px: 7.6875rem;
+   --124px: 7.75rem;
+   --125px: 7.8125rem;
+   --126px: 7.875rem;
+   --127px: 7.9375rem;
+   --128px: 8rem;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   scroll-behavior: smooth;
+   box-sizing: border-box;
+   transition: .5s;
+   overflow-wrap: break-word;
+}
+
+html,
+body {
+   background-color: var(--background-color);
+   overflow-x: hidden;
+   width: 100dvw;
+   height: 100dvh;
+   color: var(--black-color);
+   font-family: 'Rubik', sans-serif;
+   scroll-behavior: smooth;
+}
+
+
+#Instruction {
+   height: 100%;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   font-size: var(--24px);
+   font-weight: 500;
+}
+
+main {
+   height: 100%;
+   width: 100%;
+
+   #background {
+      height: 50%;
+      width: 100%;
+      background-image: url(../Materials/Image/Background.svg);
+      background-position: bottom center;
+      object-fit: cover;
+      background-repeat: no-repeat;
+   }
+
+   #container {
+      margin-top: -30%;
+      height: 60%;
+      width: 100%;
+      padding: 0 var(--24px);
+
+      #text {
+         height: fit-content;
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+
+         #heading {
+            width: fit-content;
+            color: #424242;
+            font-size: var(--38px);
+            font-weight: 500;
+            line-height: 110%;
+            border-bottom: 3px solid var(--primary-color);
+         }
+      }
+
+      #inputForm {
+         margin-top: var(--38px);
+         width: 100%;
+         height: fit-content;
+         display: flex;
+         flex-direction: column;
+         gap: var(--24px);
+
+         #input {
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            gap: var(--12px);
+
+            .inputHeading {
+               width: 100%;
+               color: #616161;
+               font-size: var(--16px);
+               font-weight: 500;
+               line-height: 140%;
+            }
+
+            .inputField {
+               width: 100%;
+               display: flex;
+               flex-direction: row;
+               justify-content: space-between;
+               align-items: center;
+               padding-bottom: var(--8px);
+               border-bottom: 1.5px solid #BDBDBD;
+
+               &:hover,
+               &:active {
+                  border-bottom: 2px solid var(--primary-color);
+               }
+
+               &:focus-within svg path {
+                  stroke: #616161;
+               }
+
+               span {
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  flex-grow: 1;
+                  gap: 8px;
+
+                  svg path {
+                     stroke: #bdbdbd;
+                  }
+
+                  input {
+                     all: unset;
+                     flex-grow: 1;
+                     color: #616161;
+                     font-size: var(--14px);
+                     font-style: normal;
+                     font-weight: 400;
+                     line-height: 140%;
+                     letter-spacing: 0.2px;
+
+                     ::placeholder {
+                        color: #d4d4d4;
+                        font-size: var(--14px);
+                        font-weight: 400;
+                        line-height: 140%;
+                     }
+                  }
+               }
+
+               svg path {
+                  stroke: #bdbdbd;
+               }
+            }
+         }
+      }
+
+   }
+}
+
+@media only screen and (max-width: 480px) {
+   #Instruction {
+      display: none;
+   }
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+   #Instruction {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: var(--24px);
+      font-weight: 500;
+   }
+
+   main {
+      display: none;
+   }
+
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+   #Instruction {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: var(--24px);
+      font-weight: 500;
+   }
+
+   main {
+      display: none;
+   }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+   #Instruction {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: var(--24px);
+      font-weight: 500;
+   }
+
+   main {
+      display: none;
+   }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+   #Instruction {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: var(--24px);
+      font-weight: 500;
+   }
+
+   main {
+      display: none;
+   }
+}
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+   #Instruction {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: var(--24px);
+      font-weight: 500;
+   }
+
+   main {
+      display: none;
+   }
+}
+
+@media (min-width: 1601px) {
+   #Instruction {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: var(--24px);
+      font-weight: 500;
+   }
+
+   main {
+      display: none;
+   }
+}

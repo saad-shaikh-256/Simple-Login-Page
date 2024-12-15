@@ -7,6 +7,11 @@
    --black-color: #212121;
    --background-color: #FFFCFC;
 
+   ::selection {
+      background-color: var(--primary-color);
+      color: var(--white-color);
+   }
+
    /* Font Sizes */
    --1px: 0.0625rem;
    --2px: 0.125rem;

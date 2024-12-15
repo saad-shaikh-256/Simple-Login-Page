@@ -10,7 +10,7 @@
    <title>Login Page - by shaikhsaad256@gmail.com</title>
 
    <!-- Links -->
-   <link rel="stylesheet" href="../CSS/login.css">
+   <link rel="stylesheet" href="../CSS/signup.css">
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
       integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
       crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -31,7 +31,7 @@
 
       <div id="container">
          <div id="text">
-            <div id="heading">Sign in</div>
+            <div id="heading">Sign up</div>
          </div>
 
          <div id="inputForm">
@@ -55,6 +55,31 @@
 
                </div>
             </div>
+
+            <div id="input">
+               <div class="inputHeading">
+                  Phone no
+               </div>
+               <div class="inputField">
+                  <span>
+                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M3.33331 5.99998C3.33331 3.80009 3.33331 2.70015 4.01673 2.01673C4.70015 1.33331 5.80009 1.33331 7.99998 1.33331C10.1998 1.33331 11.2998 1.33331 11.9832 2.01673C12.6666 2.70015 12.6666 3.80009 12.6666 5.99998V9.99998C12.6666 12.1998 12.6666 13.2998 11.9832 13.9832C11.2998 14.6666 10.1998 14.6666 7.99998 14.6666C5.80009 14.6666 4.70015 14.6666 4.01673 13.9832C3.33331 13.2998 3.33331 12.1998 3.33331 9.99998V5.99998Z"
+                           stroke="#616161" stroke-linecap="round" />
+                        <path d="M7.33331 12.6667H8.66665" stroke="#616161" stroke-linecap="round"
+                           stroke-linejoin="round" />
+                        <path
+                           d="M6 1.33331L6.05933 1.68933C6.18792 2.46084 6.25221 2.8466 6.51679 3.08134C6.7928 3.32621 7.18407 3.33331 8 3.33331C8.81593 3.33331 9.2072 3.32621 9.4832 3.08134C9.7478 2.8466 9.81207 2.46084 9.94067 1.68933L10 1.33331"
+                           stroke="#757575" stroke-linejoin="round" />
+                     </svg>
+
+
+                     <input type="tel" class="emailInput" placeholder="Enter your number">
+                  </span>
+
+               </div>
+            </div>
+
 
             <div id="input">
                <div class="inputHeading">
@@ -84,28 +109,50 @@
 
                </div>
             </div>
-         </div>
 
-         <div id="rememberAndforgot">
-            <div id="remember">
-               <input type="checkbox" id="checkbox">
-               <label for="checkbox">Remember Me</label>
+            <div id="input">
+               <div class="inputHeading">
+                  Confirm Password
+               </div>
+               <div class="inputField">
+                  <span>
+                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M14.6667 8.00004C14.6667 11.6819 11.6819 14.6667 8.00001 14.6667C4.31811 14.6667 1.33334 11.6819 1.33334 8.00004C1.33334 4.31814 4.31811 1.33337 8.00001 1.33337C11.6819 1.33337 14.6667 4.31814 14.6667 8.00004Z"
+                           stroke="#616161" />
+                        <path
+                           d="M7.99999 8.66667C8.73639 8.66667 9.33332 8.06973 9.33332 7.33333C9.33332 6.59695 8.73639 6 7.99999 6C7.26359 6 6.66666 6.59695 6.66666 7.33333C6.66666 8.06973 7.26359 8.66667 7.99999 8.66667ZM7.99999 8.66667V10.6667"
+                           stroke="#616161" stroke-linecap="round" />
+                     </svg>
+
+                     <input type="password" class="emailInput" placeholder="confirm your password">
+                  </span>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path
+                        d="M14.3626 7.36337C14.5653 7.64757 14.6666 7.78971 14.6666 8.00004C14.6666 8.21037 14.5653 8.35251 14.3626 8.63671C13.4519 9.91377 11.1261 12.6667 7.99998 12.6667C4.87383 12.6667 2.54805 9.91377 1.63734 8.63671C1.43465 8.35251 1.33331 8.21037 1.33331 8.00004C1.33331 7.78971 1.43465 7.64757 1.63734 7.36337C2.54805 6.08633 4.87383 3.33337 7.99998 3.33337C11.1261 3.33337 13.4519 6.08633 14.3626 7.36337Z"
+                        stroke="#616161" />
+                     <path
+                        d="M10 8C10 6.8954 9.1046 6 8 6C6.8954 6 6 6.8954 6 8C6 9.1046 6.8954 10 8 10C9.1046 10 10 9.1046 10 8Z"
+                        stroke="#616161" />
+                  </svg>
+
+               </div>
             </div>
-            <div id="forgot">Forgot password?</div>
          </div>
 
          <div id="buttons">
-            <button type="submit">Login</button>
+            <button type="submit">Create Account</button>
             <div id="signUp">
-               <a href="Signup.html">Don't have an account?</a>
-               <a href="Signup.html">Sign Up</a>
+               <a href="login.html">Already have an account?</a>
+               <a href="login.html">Login</a>
             </div>
          </div>
       </div>
+      
    </main>
 
    <!-- JS for GSAP -->
-   <script src="../JS/login.js"></script>
+   <script src="../JS/signup.js"></script>
 
 </body>
 

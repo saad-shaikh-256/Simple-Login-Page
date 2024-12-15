@@ -179,7 +179,7 @@ main {
    width: 100%;
 
    #background {
-      height: 55%;
+      height: 40%;
       width: 100%;
       background-image: url(../Materials/Image/Background.svg);
       background-position: bottom center;
@@ -189,7 +189,7 @@ main {
 
    #container {
       margin-top: -32%;
-      height: 55%;
+      height: 60%;
       width: 100%;
       padding: 0 var(--24px);
 
@@ -286,41 +286,6 @@ main {
          }
       }
 
-      #rememberAndforgot {
-         margin-top: var(--24px);
-         width: 100%;
-         height: fit-content;
-         display: flex;
-         justify-content: space-between;
-         align-items: center;
-
-         #remember {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 4px;
-
-            input {
-               accent-color: var(--primary-color);
-               height: 12px;
-               width: 12px;
-            }
-
-            label {
-               color: #424242;
-               font-size: var(--12px);
-               font-weight: 500;
-               letter-spacing: 0.2px;
-            }
-         }
-
-         #forgot {
-            color: #FF8383;
-            font-size: var(--12px);
-            font-weight: 600;
-            letter-spacing: 0.2px;
-         }
-      }
 
       #buttons {
          margin-top: 20%;
@@ -365,7 +330,7 @@ main {
             line-height: 140%;
             letter-spacing: 0.2px;
 
-            &:nth-child(2){
+            &:nth-child(2) {
                color: var(--primary-color);
             }
          }

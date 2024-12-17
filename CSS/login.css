@@ -185,6 +185,7 @@ main {
       background-position: bottom center;
       object-fit: cover;
       background-repeat: no-repeat;
+      transform: translateY(-80px);
    }
 
    #container {

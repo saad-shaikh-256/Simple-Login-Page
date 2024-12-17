@@ -186,6 +186,7 @@ main {
       background-position: bottom center;
       object-fit: cover;
       background-repeat: no-repeat;
+      transform: translateY(-100%);
    }
 
    #container {
@@ -204,6 +205,7 @@ main {
             font-size: var(--40px);
             font-weight: 600;
             line-height: 110%;
+      transform: translateX(-100%);
          }
 
          #subHeading {
@@ -223,6 +225,7 @@ main {
          justify-content: end;
          align-items: start;
          padding: 0 var(--24px);
+      transform: translateY(100%);
 
          #content {
             width: 100%;

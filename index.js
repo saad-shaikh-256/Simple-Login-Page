@@ -1,8 +1,4 @@
-gsap.fromTo("#background",
-   {
-      y: "-100%",
-      opacity: 0
-   },
+gsap.to("#background",
    {
       y: "0%",
       opacity: 1,
@@ -12,12 +8,8 @@ gsap.fromTo("#background",
 );
 
 
-gsap.fromTo("#heading",
-   {
-      x: "-100%",
-      opacity: 0
-   },
-   {
+gsap.to("#heading",
+    {
       x: "0%",
       opacity: 1,
       duration: 0.9,
@@ -39,11 +31,7 @@ gsap.fromTo("#subHeading",
    }
 );
 
-gsap.fromTo("#button",
-   {
-      y: "100%",
-      opacity: 0
-   },
+gsap.to("#button",
    {
       y: "0%",
       opacity: 1,

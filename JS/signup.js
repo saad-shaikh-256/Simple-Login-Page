@@ -1,64 +1,33 @@
-gsap.fromTo("#background",
-   {
-      y: "10%",
-      opacity: 0
-   },
+gsap.to("#background",
    {
       y: "0%",
       opacity: 1,
       duration: 0.5,
-      ease: "cubic-bezier(0.550, 0.055, 0.675, 0.190)",
+      ease: "power4.inOut",
    }
 );
 
-
-gsap.fromTo("#heading",
-   {
-      y: "100%",
-      opacity: 0
-   },
+gsap.to("#heading",
    {
       y: "0%",
       opacity: 1,
-      duration: 0.9,
-      ease: "cubic-bezier(0.550, 0.055, 0.675, 0.190)",
+      duration: 0.5,
+      ease: "power4.inOut",
    }
 );
-gsap.fromTo("#inputForm",
-   {
-      y: "10%",
-      opacity: 0
-   },
+gsap.to("#inputForm",
    {
       y: "0%",
       opacity: 1,
-      duration: 0.9,
-      ease: "cubic-bezier(0.550, 0.055, 0.675, 0.190)",
+      duration: 0.5,
+      ease: "power4.inOut",
    }
 );
-gsap.fromTo("#rememberAndforgot",
-   {
-      y: "100%",
-      opacity: 0
-   },
+gsap.to("#buttons",
    {
       y: "0%",
       opacity: 1,
-      duration: 0.9,
-      ease: "cubic-bezier(0.550, 0.055, 0.675, 0.190)",
-   }
-);
-
-
-gsap.fromTo("#buttons",
-   {
-      y: "100%",
-      opacity: 0
-   },
-   {
-      y: "0%",
-      opacity: 1,
-      duration: 0.9,
-      ease: "cubic-bezier(0.550, 0.055, 0.675, 0.190)",
+      duration: 0.5,
+      ease: "power4.inOut",
    }
 );

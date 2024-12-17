@@ -2,32 +2,28 @@ gsap.to("#background",
    {
       y: "0%",
       opacity: 1,
-      duration: 0.9,
-      ease: "cubic-bezier(0.550, 0.055, 0.675, 0.190)",
+      duration: 0.5,
+      ease: "power4.inOut",
    }
 );
 
 
 gsap.to("#heading",
-    {
+   {
       x: "0%",
       opacity: 1,
-      duration: 0.9,
-      ease: "cubic-bezier(0.550, 0.055, 0.675, 0.190)",
+      duration: 0.5,
+      ease: "power4.inOut",
    }
 );
 
 
-gsap.fromTo("#subHeading",
-   {
-      x: "0%",
-      opacity: 0
-   },
+gsap.to("#subHeading",
    {
       x: "0%",
       opacity: 1,
-      duration: 0.9,
-      ease: "cubic-bezier(0.550, 0.055, 0.675, 0.190)",
+      duration: 0.5,
+      ease: "power4.inOut",
    }
 );
 
@@ -35,7 +31,7 @@ gsap.to("#button",
    {
       y: "0%",
       opacity: 1,
-      duration: 0.9,
-      ease: "cubic-bezier(0.550, 0.055, 0.675, 0.190)",
+      duration: 0.5,
+      ease: "power4.inOut",
    }
 );

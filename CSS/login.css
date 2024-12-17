@@ -185,7 +185,7 @@ main {
       background-position: bottom center;
       object-fit: cover;
       background-repeat: no-repeat;
-      transform: translateY(-80px);
+      transform: translateY(-100%);
    }
 
    #container {
@@ -206,6 +206,8 @@ main {
             font-size: var(--38px);
             font-weight: 500;
             line-height: 110%;
+            transform: translateY(80px);
+            opacity: 0;
          }
       }
 
@@ -216,6 +218,8 @@ main {
          display: flex;
          flex-direction: column;
          gap: var(--24px);
+         transform: translateY(100%);
+         opacity: 0;
 
          #input {
             width: 100%;
@@ -294,6 +298,8 @@ main {
          display: flex;
          justify-content: space-between;
          align-items: center;
+         transform: translateY(100%);
+         opacity: 0;
 
          #remember {
             display: flex;
@@ -332,6 +338,8 @@ main {
          align-items: center;
          gap: var(--20px);
          flex-direction: column;
+         transform: translateY(100%);
+         opacity: 0;
 
          button {
             all: unset;
@@ -366,7 +374,7 @@ main {
             line-height: 140%;
             letter-spacing: 0.2px;
 
-            &:nth-child(2){
+            &:nth-child(2) {
                color: var(--primary-color);
             }
          }

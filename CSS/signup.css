@@ -185,7 +185,7 @@ main {
       background-position: bottom center;
       object-fit: cover;
       background-repeat: no-repeat;
-      transform: translateY(-50%);
+      transform: translateY(-100%);
       opacity: 0;
    }
 

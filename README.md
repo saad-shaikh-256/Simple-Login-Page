@@ -20,7 +20,7 @@ This project is a simple login page built using **HTML** , **CSS** and **JS**. I
 
 ## Demo
 
-Check out the live demo: [Simple Login Page](https://simple-login-page-404.netlify.app/)
+Check out the live demo: [Simple Login Page](https://simple-login-page-404.vercel.app/)
 
 ## Installation
 
